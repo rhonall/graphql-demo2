@@ -4,7 +4,7 @@ module Types
     # They will be entry points for queries on your schema.
     field :providers, [ProviderType], null: false
     field :products, [ProductType], null: false
-    field :students, [StudentType], null: false, description: "Testing", resolver: Resolvers::StudentsSearch
+    field :students, [StudentType], null: false, description: "Have filter functionality", resolver: Resolvers::StudentsSearch
     field :policies, [PolicyType], null: false, resolver: Resolvers::PoliciesSearch
 
     field :provider, ProviderType, null: false do

@@ -1,24 +1,17 @@
-# README
+# GraphQL Demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple rails project that is used to demonstrate the usage of GraphQL.
 
-Things you may want to cover:
+Feel free to clone this project and test it out.
 
-* Ruby version
+### Steps to run this locally
 
-* System dependencies
+- Clone this project
 
-* Configuration
+- Run `bundle install` to install the required dependencies
 
-* Database creation
+- Run `rails db:migrate`
 
-* Database initialization
+- Start the rails server
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- You should be able to visit the GUI interface by visiting https://localhost:3000/graphiql
