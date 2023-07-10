@@ -7,8 +7,9 @@ module Mutations
     # return type from the mutation
     type Types::ProductType
 
-    def resolve(name: nil, provider_id: nil)
+    def resolve(name:, provider_id:)
       provider = Provider.find(provider_id)
+
       Product.create!(
         name: name,
         provider: provider
