@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_07_09_110137) do
+ActiveRecord::Schema.define(version: 2023_07_10_065129) do
 
   create_table "policies", force: :cascade do |t|
     t.string "start_date", null: false
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2023_07_09_110137) do
     t.integer "student_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "status", default: "pending", null: false
     t.index ["product_id"], name: "index_policies_on_product_id"
     t.index ["provider_id"], name: "index_policies_on_provider_id"
     t.index ["student_id"], name: "index_policies_on_student_id"
