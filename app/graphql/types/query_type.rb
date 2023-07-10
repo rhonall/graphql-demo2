@@ -33,5 +33,21 @@ module Types
     rescue ActiveRecord::RecordNotFound => e
       GraphQL::ExecutionError.new("Record not found: #{e}")
     end
+
+    field :students, [StudentType], null: false
+    
+    def students
+      Student.all
+    end
+
+    field :student, StudentType, null: false do
+      argument :id, ID, required: true
+    end
+
+    def student(id:)
+      Student.find(id)
+    rescue ActiveRecord::RecordNotFound => e
+      GraphQL::ExecutionError.new("Record not found: #{e}")
+    end
   end
 end
