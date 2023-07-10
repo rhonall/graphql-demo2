@@ -14,4 +14,4 @@ Feel free to clone this project and test it out.
 
 - Start the rails server
 
-- You should be able to visit the GUI interface by visiting https://localhost:3000/graphiql
+- You should be able to visit the GUI interface by visiting http://localhost:3000/graphiql
