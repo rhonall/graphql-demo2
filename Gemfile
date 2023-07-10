@@ -41,3 +41,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'graphql', '1.11.6'
 # Provide a GUI interface for us to test out the GraphQL queries
 gem 'graphiql-rails', '1.7.0', group: :development
+
+# For making more advanced GraphQL search/filter resolvers.
+gem 'search_object_graphql', '0.3.1'
